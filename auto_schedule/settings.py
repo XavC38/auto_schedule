@@ -38,6 +38,10 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'schedule',
+    'filer',
+    'mptt',
+    'easy_thumbnails',
+    'calendarium',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -68,6 +72,10 @@ TEMPLATES = [
         },
     },
 ]
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'django.core.context_processors.request',
+)
 
 WSGI_APPLICATION = 'auto_schedule.wsgi.application'
 
